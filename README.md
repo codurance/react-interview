@@ -8,8 +8,9 @@ Don't be afraid to ask questions, and do communicate your thinking.
 
 ## Goal
 
-Test-drive a component that can take in data, and render it as a table.
+Test-drive a component that can take in arbitrary data and render it as a table.
 
 Use `./design.png` as a reference. You don't need to worry about styling to begin with.
 
-`./src/data/userData.ts` contains example data that should be rendered.
+`./src/api/userData.ts` contains a fake API via the method `getUserData`, you will be able to look at the
+shape of the data as described by the interface `UserData`.
