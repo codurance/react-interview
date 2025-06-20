@@ -1,4 +1,4 @@
-interface UserData {
+export interface UserData {
   id: string;
   firstName: string;
   lastName: string;
@@ -8,7 +8,7 @@ interface UserData {
   rating: number;
 }
 
-export const userData: UserData[] = [
+const userData: UserData[] = [
   {
     id: '9da70cb8-4d17-4d79-ae93-8b6c47662c2c',
     firstName: 'Quinta',
@@ -190,3 +190,17 @@ export const userData: UserData[] = [
     rating: 1,
   },
 ];
+
+function shuffleArray<T>(array: T[]): T[] {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// MOCK User API, this will simulate returning different results
+// as if the data is evolving
+export async function getUserData(): Promise<UserData[]> {
+  return shuffleArray(userData);
+}
