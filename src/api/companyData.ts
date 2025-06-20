@@ -1,7 +1,7 @@
 export interface CompanyData {
   name: string;
   address: string;
-  phoneNumber: string
+  phoneNumber: string;
 }
 
 const companyData: CompanyData[] = [
