@@ -12,4 +12,10 @@ Test-drive a component that can take in data, and render it as a table.
 
 Use `./design.png` as a reference. You don't need to worry about styling to begin with.
 
-`./src/data/userData.ts` contains example data that should be rendered.
+The data is served via **json-server**.
+
+Before starting, run:
+
+```bash
+npm run start:api
+```
