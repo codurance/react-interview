@@ -19,3 +19,9 @@ Before starting, run:
 ```bash
 npm run start:api
 ```
+
+Once the API is running, it will be available at:
+
+```
+http://localhost:3001/users
+```
