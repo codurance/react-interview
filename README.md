@@ -1,6 +1,6 @@
 # React Pairing Exercise
 
-## Introduction
+## Introductionn
 
 This exercise should be completed as if you are pairing on a feature within a real business setting.
 
